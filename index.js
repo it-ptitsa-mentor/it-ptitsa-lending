@@ -1,5 +1,9 @@
-function hello() {
-  console.log("Hello, world!");
-}
+export function getWelcomeMessage() {
+  const FEATURE_FLAG = true;
 
-hello();
+  if (FEATURE_FLAG) {
+    return "New feature enabled";
+  }
+
+  return "Old version";
+}
