@@ -1,9 +1,6 @@
-export function getWelcomeMessage() {
-  const FEATURE_FLAG = true;
-
-  if (FEATURE_FLAG) {
-    return "New feature enabled";
+export function calculateDiscount(price, userType) {
+  if (userType === "regular") {
+    return price * 0.05;
   }
-
-  return "Old version";
+  return 0;
 }
